@@ -1,0 +1,800 @@
+{
+ "schema": "x2cbct_luna16_patient_split_registry.v1",
+ "generated_at": "2026-05-27T10:14:11",
+ "source_profile": "runs\\audits\\luna16_dataset_profile\\luna16_profile_strict_exact_metadata.json",
+ "root": "dataset_list\\LUNA16",
+ "geometry_policy": "strict-exact",
+ "hu_window": {
+  "metadata_only": true,
+  "source_split": "train",
+  "percentiles": [
+   0.5,
+   99.5
+  ],
+  "sample_voxels_per_case": 20000,
+  "profiles": {},
+  "case_stats": []
+ },
+ "split": {
+  "policy": "patient_id_shuffle_train_test",
+  "seed": 20260527,
+  "train_ratio": 0.8,
+  "train_patient_count": 18,
+  "test_patient_count": 4,
+  "patient_overlap": [],
+  "train_case_count": 18,
+  "test_case_count": 4
+ },
+ "cases": [
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.100953483028192176989979435275",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.100953483028192176989979435275",
+   "subset": "subset3",
+   "ct_path": "dataset_list\\LUNA16\\subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.100953483028192176989979435275.mhd",
+   "relative_ct_path": "subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.100953483028192176989979435275.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.100953483028192176989979435275.raw",
+   "relative_raw_path": "subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.100953483028192176989979435275.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.100953483028192176989979435275.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.100953483028192176989979435275.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "test",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.120842785645314664964010792308",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.120842785645314664964010792308",
+   "subset": "subset6",
+   "ct_path": "dataset_list\\LUNA16\\subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.120842785645314664964010792308.mhd",
+   "relative_ct_path": "subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.120842785645314664964010792308.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.120842785645314664964010792308.raw",
+   "relative_raw_path": "subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.120842785645314664964010792308.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.120842785645314664964010792308.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.120842785645314664964010792308.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "test",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.128023902651233986592378348912",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.128023902651233986592378348912",
+   "subset": "subset0",
+   "ct_path": "dataset_list\\LUNA16\\subset0\\subset0\\1.3.6.1.4.1.14519.5.2.1.6279.6001.128023902651233986592378348912.mhd",
+   "relative_ct_path": "subset0\\subset0\\1.3.6.1.4.1.14519.5.2.1.6279.6001.128023902651233986592378348912.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset0\\subset0\\1.3.6.1.4.1.14519.5.2.1.6279.6001.128023902651233986592378348912.raw",
+   "relative_raw_path": "subset0\\subset0\\1.3.6.1.4.1.14519.5.2.1.6279.6001.128023902651233986592378348912.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.128023902651233986592378348912.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.128023902651233986592378348912.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.149041668385192796520281592139",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.149041668385192796520281592139",
+   "subset": "subset8",
+   "ct_path": "dataset_list\\LUNA16\\subset8\\subset8\\1.3.6.1.4.1.14519.5.2.1.6279.6001.149041668385192796520281592139.mhd",
+   "relative_ct_path": "subset8\\subset8\\1.3.6.1.4.1.14519.5.2.1.6279.6001.149041668385192796520281592139.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset8\\subset8\\1.3.6.1.4.1.14519.5.2.1.6279.6001.149041668385192796520281592139.raw",
+   "relative_raw_path": "subset8\\subset8\\1.3.6.1.4.1.14519.5.2.1.6279.6001.149041668385192796520281592139.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.149041668385192796520281592139.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.149041668385192796520281592139.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.177985905159808659201278495182",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.177985905159808659201278495182",
+   "subset": "subset3",
+   "ct_path": "dataset_list\\LUNA16\\subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.177985905159808659201278495182.mhd",
+   "relative_ct_path": "subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.177985905159808659201278495182.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.177985905159808659201278495182.raw",
+   "relative_raw_path": "subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.177985905159808659201278495182.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.177985905159808659201278495182.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.177985905159808659201278495182.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "test",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.178680586845223339579041794709",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.178680586845223339579041794709",
+   "subset": "subset4",
+   "ct_path": "dataset_list\\LUNA16\\subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.178680586845223339579041794709.mhd",
+   "relative_ct_path": "subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.178680586845223339579041794709.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.178680586845223339579041794709.raw",
+   "relative_raw_path": "subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.178680586845223339579041794709.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.178680586845223339579041794709.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.178680586845223339579041794709.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.179049373636438705059720603192",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.179049373636438705059720603192",
+   "subset": "subset1",
+   "ct_path": "dataset_list\\LUNA16\\subset1\\subset1\\1.3.6.1.4.1.14519.5.2.1.6279.6001.179049373636438705059720603192.mhd",
+   "relative_ct_path": "subset1\\subset1\\1.3.6.1.4.1.14519.5.2.1.6279.6001.179049373636438705059720603192.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset1\\subset1\\1.3.6.1.4.1.14519.5.2.1.6279.6001.179049373636438705059720603192.raw",
+   "relative_raw_path": "subset1\\subset1\\1.3.6.1.4.1.14519.5.2.1.6279.6001.179049373636438705059720603192.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.179049373636438705059720603192.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.179049373636438705059720603192.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.212346425055214308006918165305",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.212346425055214308006918165305",
+   "subset": "subset2",
+   "ct_path": "dataset_list\\LUNA16\\subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.212346425055214308006918165305.mhd",
+   "relative_ct_path": "subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.212346425055214308006918165305.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.212346425055214308006918165305.raw",
+   "relative_raw_path": "subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.212346425055214308006918165305.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.212346425055214308006918165305.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.212346425055214308006918165305.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.221017801605543296514746423389",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.221017801605543296514746423389",
+   "subset": "subset6",
+   "ct_path": "dataset_list\\LUNA16\\subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.221017801605543296514746423389.mhd",
+   "relative_ct_path": "subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.221017801605543296514746423389.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.221017801605543296514746423389.raw",
+   "relative_raw_path": "subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.221017801605543296514746423389.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.221017801605543296514746423389.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.221017801605543296514746423389.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "test",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.240969450540588211676803094518",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.240969450540588211676803094518",
+   "subset": "subset2",
+   "ct_path": "dataset_list\\LUNA16\\subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.240969450540588211676803094518.mhd",
+   "relative_ct_path": "subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.240969450540588211676803094518.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.240969450540588211676803094518.raw",
+   "relative_raw_path": "subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.240969450540588211676803094518.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.240969450540588211676803094518.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.240969450540588211676803094518.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.257383535269991165447822992959",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.257383535269991165447822992959",
+   "subset": "subset8",
+   "ct_path": "dataset_list\\LUNA16\\subset8\\subset8\\1.3.6.1.4.1.14519.5.2.1.6279.6001.257383535269991165447822992959.mhd",
+   "relative_ct_path": "subset8\\subset8\\1.3.6.1.4.1.14519.5.2.1.6279.6001.257383535269991165447822992959.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset8\\subset8\\1.3.6.1.4.1.14519.5.2.1.6279.6001.257383535269991165447822992959.raw",
+   "relative_raw_path": "subset8\\subset8\\1.3.6.1.4.1.14519.5.2.1.6279.6001.257383535269991165447822992959.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.257383535269991165447822992959.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.257383535269991165447822992959.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.261700367741314729940340271960",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.261700367741314729940340271960",
+   "subset": "subset7",
+   "ct_path": "dataset_list\\LUNA16\\subset7\\subset7\\1.3.6.1.4.1.14519.5.2.1.6279.6001.261700367741314729940340271960.mhd",
+   "relative_ct_path": "subset7\\subset7\\1.3.6.1.4.1.14519.5.2.1.6279.6001.261700367741314729940340271960.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset7\\subset7\\1.3.6.1.4.1.14519.5.2.1.6279.6001.261700367741314729940340271960.raw",
+   "relative_raw_path": "subset7\\subset7\\1.3.6.1.4.1.14519.5.2.1.6279.6001.261700367741314729940340271960.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.261700367741314729940340271960.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.261700367741314729940340271960.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.268992195564407418480563388746",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.268992195564407418480563388746",
+   "subset": "subset4",
+   "ct_path": "dataset_list\\LUNA16\\subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.268992195564407418480563388746.mhd",
+   "relative_ct_path": "subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.268992195564407418480563388746.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.268992195564407418480563388746.raw",
+   "relative_raw_path": "subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.268992195564407418480563388746.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.268992195564407418480563388746.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.268992195564407418480563388746.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.271307051432838466826189754230",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.271307051432838466826189754230",
+   "subset": "subset7",
+   "ct_path": "dataset_list\\LUNA16\\subset7\\subset7\\1.3.6.1.4.1.14519.5.2.1.6279.6001.271307051432838466826189754230.mhd",
+   "relative_ct_path": "subset7\\subset7\\1.3.6.1.4.1.14519.5.2.1.6279.6001.271307051432838466826189754230.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset7\\subset7\\1.3.6.1.4.1.14519.5.2.1.6279.6001.271307051432838466826189754230.raw",
+   "relative_raw_path": "subset7\\subset7\\1.3.6.1.4.1.14519.5.2.1.6279.6001.271307051432838466826189754230.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.271307051432838466826189754230.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.271307051432838466826189754230.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.296863826932699509516219450076",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.296863826932699509516219450076",
+   "subset": "subset2",
+   "ct_path": "dataset_list\\LUNA16\\subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.296863826932699509516219450076.mhd",
+   "relative_ct_path": "subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.296863826932699509516219450076.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.296863826932699509516219450076.raw",
+   "relative_raw_path": "subset2\\subset2\\1.3.6.1.4.1.14519.5.2.1.6279.6001.296863826932699509516219450076.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.296863826932699509516219450076.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.296863826932699509516219450076.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.309901913847714156367981722205",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.309901913847714156367981722205",
+   "subset": "subset9",
+   "ct_path": "dataset_list\\LUNA16\\subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.309901913847714156367981722205.mhd",
+   "relative_ct_path": "subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.309901913847714156367981722205.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.309901913847714156367981722205.raw",
+   "relative_raw_path": "subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.309901913847714156367981722205.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.309901913847714156367981722205.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.309901913847714156367981722205.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.320967206808467952819309001585",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.320967206808467952819309001585",
+   "subset": "subset4",
+   "ct_path": "dataset_list\\LUNA16\\subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.320967206808467952819309001585.mhd",
+   "relative_ct_path": "subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.320967206808467952819309001585.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.320967206808467952819309001585.raw",
+   "relative_raw_path": "subset4\\subset4\\1.3.6.1.4.1.14519.5.2.1.6279.6001.320967206808467952819309001585.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.320967206808467952819309001585.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.320967206808467952819309001585.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.323408652979949774528873200770",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.323408652979949774528873200770",
+   "subset": "subset5",
+   "ct_path": "dataset_list\\LUNA16\\subset5\\subset5\\1.3.6.1.4.1.14519.5.2.1.6279.6001.323408652979949774528873200770.mhd",
+   "relative_ct_path": "subset5\\subset5\\1.3.6.1.4.1.14519.5.2.1.6279.6001.323408652979949774528873200770.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset5\\subset5\\1.3.6.1.4.1.14519.5.2.1.6279.6001.323408652979949774528873200770.raw",
+   "relative_raw_path": "subset5\\subset5\\1.3.6.1.4.1.14519.5.2.1.6279.6001.323408652979949774528873200770.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.323408652979949774528873200770.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.323408652979949774528873200770.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.340012777775661021262977442176",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.340012777775661021262977442176",
+   "subset": "subset9",
+   "ct_path": "dataset_list\\LUNA16\\subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.340012777775661021262977442176.mhd",
+   "relative_ct_path": "subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.340012777775661021262977442176.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.340012777775661021262977442176.raw",
+   "relative_raw_path": "subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.340012777775661021262977442176.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.340012777775661021262977442176.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.340012777775661021262977442176.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.367204840301639918160517361062",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.367204840301639918160517361062",
+   "subset": "subset3",
+   "ct_path": "dataset_list\\LUNA16\\subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.367204840301639918160517361062.mhd",
+   "relative_ct_path": "subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.367204840301639918160517361062.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.367204840301639918160517361062.raw",
+   "relative_raw_path": "subset3\\subset3\\1.3.6.1.4.1.14519.5.2.1.6279.6001.367204840301639918160517361062.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.367204840301639918160517361062.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.367204840301639918160517361062.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.465032801496479029639448332481",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.465032801496479029639448332481",
+   "subset": "subset6",
+   "ct_path": "dataset_list\\LUNA16\\subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.465032801496479029639448332481.mhd",
+   "relative_ct_path": "subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.465032801496479029639448332481.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.465032801496479029639448332481.raw",
+   "relative_raw_path": "subset6\\subset6\\1.3.6.1.4.1.14519.5.2.1.6279.6001.465032801496479029639448332481.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.465032801496479029639448332481.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.465032801496479029639448332481.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  },
+  {
+   "patient_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.733642690503782454656013446707",
+   "seriesuid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.733642690503782454656013446707",
+   "subset": "subset9",
+   "ct_path": "dataset_list\\LUNA16\\subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.733642690503782454656013446707.mhd",
+   "relative_ct_path": "subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.733642690503782454656013446707.mhd",
+   "raw_path": "dataset_list\\LUNA16\\subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.733642690503782454656013446707.raw",
+   "relative_raw_path": "subset9\\subset9\\1.3.6.1.4.1.14519.5.2.1.6279.6001.733642690503782454656013446707.raw",
+   "mask_path": "dataset_list\\LUNA16\\seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.733642690503782454656013446707.mhd",
+   "relative_mask_path": "seg-lungs-LUNA16\\1.3.6.1.4.1.14519.5.2.1.6279.6001.733642690503782454656013446707.mhd",
+   "dim_size_xyz": [
+    512,
+    512,
+    133
+   ],
+   "shape_zyx": [
+    133,
+    512,
+    512
+   ],
+   "spacing_xyz": [
+    0.703125,
+    0.703125,
+    2.5
+   ],
+   "element_type": "MET_SHORT",
+   "anatomical_orientation": "RAI",
+   "transform_is_identity": true,
+   "raw_exists": true,
+   "mask_exists": true,
+   "compatibility_reasons": [],
+   "split": "train",
+   "split_seed": 20260527,
+   "split_train_ratio": 0.8
+  }
+ ]
+}

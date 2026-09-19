@@ -1,0 +1,5 @@
+# DeepSparse-only packages installed into .conda/deepsparse.
+# CUDA PyTorch, NumPy, SciPy, scikit-image, SimpleITK, and PyYAML are inherited
+# from .conda/x2cbct-v0 via the venv's system-site-packages setting.
+easydict==1.13
+huggingface-hub==0.23.5

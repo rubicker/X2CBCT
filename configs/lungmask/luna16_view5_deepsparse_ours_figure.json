@@ -1,0 +1,25 @@
+{
+  "schema": "x2cbct_lungmask_experiment.v1",
+  "experiment_id": "luna16_view5_lungmask_r231_deepsparse_ours_figure",
+  "view_key": "view_5",
+  "target_shape_zyx": [128, 128, 128],
+  "primary_method": "CaSE-CBCT",
+  "figure_title": "Lung segmentation comparison (5 views)",
+  "display_names": {
+    "CaSE-CBCT": "Ours"
+  },
+  "reference": {
+    "cache_manifest": "data_cache/difnet_v1_si10_rot10_3x3_256/luna16/test_noaug_256/luna16/cache_manifest.json",
+    "value_space": "normalized"
+  },
+  "methods": [
+    {
+      "name": "DeepSparse",
+      "prediction_manifest": "runs/segmentation_lungmask/reconstruction_manifests/deepsparse_view5/evaluation_manifest.json"
+    },
+    {
+      "name": "CaSE-CBCT",
+      "prediction_manifest": "runs/segmentation_lungmask/reconstruction_manifests/case_cbct_view5_si_p10_inverse/prediction_manifest.json"
+    }
+  ]
+}

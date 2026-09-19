@@ -1,0 +1,53 @@
+{
+  "schema": "x2cbct_lungmask_experiment.v1",
+  "experiment_id": "luna16_view5_lungmask_r231_full",
+  "view_key": "view_5",
+  "target_shape_zyx": [128, 128, 128],
+  "primary_method": "CaSE-CBCT",
+  "figure_title": "Lung segmentation comparison (5 views)",
+  "display_names": {
+    "CaSE-CBCT": "Ours"
+  },
+  "case_policy": "strict",
+  "reference": {
+    "cache_manifest": "data_cache/difnet_v1_si10_rot10_3x3_256/luna16/test_noaug_256/luna16/cache_manifest.json",
+    "value_space": "normalized"
+  },
+  "lungmask": {
+    "modelname": "R231",
+    "batch_size": 20,
+    "force_cpu": false,
+    "volume_postprocessing": true,
+    "tqdm_disable": true
+  },
+  "methods": [
+    {
+      "name": "FDK",
+      "prediction_manifest": "runs/fdk/luna16_view5/prediction_manifest.json"
+    },
+    {
+      "name": "SART",
+      "prediction_manifest": "runs/sart/luna16_view5/prediction_manifest.json"
+    },
+    {
+      "name": "DIF-Net",
+      "prediction_manifest": "runs/output/dif_net_baseline/v5_luna16_noaug/validation/epoch_0200_full_final/test/prediction_manifest.json"
+    },
+    {
+      "name": "C2RV",
+      "prediction_manifest": "runs/output/duibi/c2rv_v5_luna16_noaug/validation/epoch_0200_full/test/prediction_manifest.json"
+    },
+    {
+      "name": "DuFal",
+      "prediction_manifest": "runs/output/dufal/v5_luna16_noaug/validation/epoch_0200_full_final/test/prediction_manifest.json"
+    },
+    {
+      "name": "DeepSparse",
+      "prediction_manifest": "runs/segmentation_lungmask/reconstruction_manifests/deepsparse_view5/evaluation_manifest.json"
+    },
+    {
+      "name": "CaSE-CBCT",
+      "prediction_manifest": "runs/segmentation_lungmask/reconstruction_manifests/case_cbct_view5_si_p10_inverse/prediction_manifest.json"
+    }
+  ]
+}

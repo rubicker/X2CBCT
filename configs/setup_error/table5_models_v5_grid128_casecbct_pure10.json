@@ -1,0 +1,59 @@
+{
+  "schema": "x2cbct_setup_error_table5_models.v1",
+  "dataset": "self_projection1208",
+  "view_count": 5,
+  "eval_grid_size": 128,
+  "experiment": "casecbct_pure10",
+  "models": [
+    {
+      "id": "difnet",
+      "display_name": "DIF-Net",
+      "enabled": true,
+      "backend": "difnet",
+      "checkpoint": "runs/output/dif_net_baseline/v5_real_noaug/checkpoints/epoch_0100.pt",
+      "model_label": "DIF-Net_epoch0100",
+      "mid_channels": 64,
+      "chunk_size": 30000
+    },
+    {
+      "id": "dufal",
+      "display_name": "DuFal",
+      "enabled": true,
+      "backend": "difnet",
+      "checkpoint": "runs/output/dufal/v5_real_noaug/checkpoints/epoch_0150.pt",
+      "model_label": "DuFal_epoch0150",
+      "mid_channels": 64,
+      "chunk_size": 20000
+    },
+    {
+      "id": "c2rv",
+      "display_name": "C2RV",
+      "enabled": true,
+      "backend": "difnet",
+      "checkpoint": "runs/output/duibi/c2rv_v5_real_noaug/checkpoints/epoch_0100.pt",
+      "model_label": "C2RV_epoch0100",
+      "mid_channels": 64,
+      "chunk_size": 30000
+    },
+    {
+      "id": "deepsparse",
+      "display_name": "DeepSparse",
+      "enabled": true,
+      "backend": "deepsparse",
+      "python": ".conda/deepsparse/Scripts/python.exe",
+      "checkpoint": "runs/output/deepsparse/v5_real_noaug/checkpoint_epoch_100.pt",
+      "model_label": "DeepSparse_epoch0100",
+      "chunk_size": 20000
+    },
+    {
+      "id": "ours",
+      "display_name": "CaSE-CBCT (Ours)",
+      "enabled": true,
+      "backend": "difnet",
+      "checkpoint": "runs/output/capsule_test/E2-SH-V5-real3x3/checkpoints/epoch_0300.pt",
+      "model_label": "CaSE-CBCT_real3x3_epoch0300",
+      "mid_channels": 64,
+      "chunk_size": 20000
+    }
+  ]
+}

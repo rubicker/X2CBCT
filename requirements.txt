@@ -1,0 +1,22 @@
+# Core dependencies of the CaSE-CBCT release.
+# Install a CUDA-enabled PyTorch build matching your driver first:
+#   https://pytorch.org/get-started/locally/
+torch>=2.0
+numpy
+scipy
+SimpleITK
+opencv-python
+scikit-image
+matplotlib
+Pillow
+PyYAML
+requests
+pytest
+
+# TIGRE (cone-beam projector / DRR simulation) requires a CUDA toolkit and is
+# installed per the official instructions, typically:
+#   pip install TIGRE
+# https://github.com/CERN/TIGRE
+
+# The DeepSparse baseline has additional runtime requirements, see
+# configs/deepsparse/requirements-runtime.txt

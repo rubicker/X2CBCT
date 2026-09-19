@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Data, caches and experiment outputs (never commit patient data or checkpoints)
+data_cache/
+dataset_list/
+runs/
+output/
+*.pth
+*.pt
+*.ckpt
+*.npz
+*.npy
+*.mha
+*.mhd
+*.raw
+
+# Local manifests for the clinical cohort (excluded from the public repo)
+data_manifest/splits_v0b*
+data_manifest/fixed_view_sampling_v0b*
+data_manifest/self_projection*
+data_manifest/difnet_v1_derivative_manifests*
+data_manifest/difnet_v1_si10_rot10_3x3_256/self_projection*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

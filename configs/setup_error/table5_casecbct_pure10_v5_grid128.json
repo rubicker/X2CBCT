@@ -1,0 +1,37 @@
+{
+  "schema": "x2cbct_setup_error_casecbct_pure10.v1",
+  "description": "Two held-out CaSE-CBCT cases selected from E2-SH-V5-real3x3: one pure +10 mm S-I sample and one pure +10 degree yaw sample.",
+  "selection_metrics_csv": "runs/output/capsule_test/E2-SH-V5-real3x3/validation/epoch_0300_full_final/test/metrics_per_case.csv",
+  "selection_prediction_manifest": "runs/output/capsule_test/E2-SH-V5-real3x3/validation/epoch_0300_full_final/test/prediction_manifest.json",
+  "identity_cache_root": "data_cache/difnet_v1_si10_rot10_3x3_256/self_projection1208/test_mixed_noaug_256",
+  "augmented_cache_root": "data_cache/difnet_v1_si10_rot10_3x3_256/self_projection1208/test_mixed_aug3x3_256",
+  "roi_reviewed": "runs/setup_error/model_experiments/_shared_baseline/cervical_roi_review/roi_reviewed.csv",
+  "source_registration_output": "runs/setup_error/model_experiments/_shared_baseline/table5_casecbct_pure10_source_grid",
+  "batch_output": "runs/setup_error/model_experiments/table5_casecbct_pure10_v5_grid128",
+  "model_config": "configs/setup_error/table5_models_v5_grid128_casecbct_pure10.json",
+  "view_count": 5,
+  "eval_grid_size": 128,
+  "source_grid_size": 256,
+  "experiments": [
+    {
+      "axis": "si-max",
+      "patient_id": "4",
+      "case_id": "13",
+      "reference_augmentation_id": "identity",
+      "moving_augmentation_id": "si_p10_rot_0",
+      "translation_mm": 10.0,
+      "rotation_deg": 0.0,
+      "selection_note": "Best PSNR and best SSIM among all pure +10 mm S-I test samples; highest source-case mean across all eight non-identity perturbations."
+    },
+    {
+      "axis": "yaw-max",
+      "patient_id": "6",
+      "case_id": "10",
+      "reference_augmentation_id": "identity",
+      "moving_augmentation_id": "si_0_rot_p10",
+      "translation_mm": 0.0,
+      "rotation_deg": 10.0,
+      "selection_note": "Second-best PSNR and third-best SSIM among pure +10 degree yaw test samples; second-highest source-case mean across all eight non-identity perturbations."
+    }
+  ]
+}

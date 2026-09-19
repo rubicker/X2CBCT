@@ -1,0 +1,122 @@
+{
+  "schema": "x2cbct.table4_a_to_b.v1",
+  "_comment": "Runs selected experiments sequentially and never overwrites a non-empty output directory. Metrics-only evaluation is the default to avoid tens of gigabytes of NPY volumes.",
+  "defaults": {
+    "output_root": "runs/output/table4_a_to_b",
+    "python_exe": ".conda/x2cbct-v0/python.exe",
+    "view_count": 5,
+    "split": "test",
+    "params": {
+      "device": "auto",
+      "eval_grid_size": 128,
+      "chunk_size": 20000,
+      "max_test_cases": null,
+      "save_volumes": false,
+      "skip_visualization": true,
+      "sample_strategy": "first-n",
+      "shard_count": 1,
+      "shard_index": 0
+    }
+  },
+  "datasets": {
+    "luna16": {
+      "cache_root": "data_cache/difnet_v1_si10_rot10_3x3_256/luna16/test_aug3x3_256/luna16"
+    },
+    "real": {
+      "cache_root": "data_cache/difnet_v1_si10_rot10_3x3_256/self_projection1208/test_mixed_aug3x3_256"
+    }
+  },
+  "experiments": {
+    "difnet_luna16": {
+      "enabled": true,
+      "model": "difnet",
+      "dataset": "luna16",
+      "backend": "difnet",
+      "run_dir": "runs/output/dif_net_baseline/v5_luna16_noaug",
+      "checkpoint": "latest"
+    },
+    "difnet_real": {
+      "enabled": true,
+      "model": "difnet",
+      "dataset": "real",
+      "backend": "difnet",
+      "run_dir": "runs/output/dif_net_baseline/v5_real_noaug",
+      "checkpoint": "epoch:100"
+    },
+    "dufal_luna16": {
+      "enabled": true,
+      "model": "dufal",
+      "dataset": "luna16",
+      "backend": "difnet",
+      "run_dir": "runs/output/dufal/v5_luna16_noaug",
+      "checkpoint": "epoch:150"
+    },
+    "dufal_real": {
+      "enabled": true,
+      "model": "dufal",
+      "dataset": "real",
+      "backend": "difnet",
+      "run_dir": "runs/output/dufal/v5_real_noaug",
+      "checkpoint": "epoch:150"
+    },
+    "c2rv_luna16": {
+      "enabled": true,
+      "model": "c2rv",
+      "dataset": "luna16",
+      "backend": "difnet",
+      "run_dir": "runs/output/duibi/c2rv_v5_luna16_noaug",
+      "checkpoint": "epoch:100"
+    },
+    "c2rv_real": {
+      "enabled": true,
+      "model": "c2rv",
+      "dataset": "real",
+      "backend": "difnet",
+      "run_dir": "runs/output/duibi/c2rv_v5_real_noaug",
+      "checkpoint": "epoch:100"
+    },
+    "deepsparse_luna16": {
+      "enabled": true,
+      "model": "deepsparse",
+      "dataset": "luna16",
+      "backend": "deepsparse",
+      "python_exe": ".conda/deepsparse/Scripts/python.exe",
+      "run_dir": "runs/output/deepsparse/v5_luna16_noaug",
+      "checkpoint": "epoch:100",
+      "model_config": "configs/deepsparse/v5_luna16_noaug.yaml",
+      "params": {
+        "mixed_precision": true
+      }
+    },
+    "deepsparse_real": {
+      "enabled": true,
+      "model": "deepsparse",
+      "dataset": "real",
+      "backend": "deepsparse",
+      "python_exe": ".conda/deepsparse/Scripts/python.exe",
+      "run_dir": "runs/output/deepsparse/v5_real_noaug",
+      "checkpoint": "epoch:100",
+      "model_config": "configs/deepsparse/v5_real_noaug.yaml",
+      "params": {
+        "mixed_precision": true
+      }
+    },
+    "ours_luna16": {
+      "enabled": false,
+      "model": "ours",
+      "dataset": "luna16",
+      "backend": "difnet",
+      "run_dir": null,
+      "checkpoint": null,
+      "note": "missing view-5 LUNA16 noaug model A checkpoint"
+    },
+    "ours_real": {
+      "enabled": true,
+      "model": "ours",
+      "dataset": "real",
+      "backend": "difnet",
+      "run_dir": "runs/output/capsule_test/E2-SH-V5-real-noaug",
+      "checkpoint": "latest"
+    }
+  }
+}

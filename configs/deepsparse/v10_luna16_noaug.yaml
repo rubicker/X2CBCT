@@ -1,0 +1,30 @@
+experiment: v10_luna16_noaug
+dataset:
+  train_cache: data_cache/difnet_v1_si10_rot10_3x3_256/luna16/train_noaug_256
+  test_cache: data_cache/difnet_v1_si10_rot10_3x3_256/luna16/test_noaug_256/luna16
+  train_split: train
+  test_split: test
+  view_count: 10
+  projection_multiplier: 1.0
+model:
+  official_config: external/deepsparse_official/configs/finetune_s1.yaml
+  pretrained_checkpoint: external/deepsparse_official/logs/pretrain/ep_700.pth
+  lr_res: 32
+training:
+  epochs: 200
+  batch_size: 2
+  num_points: 10000
+  lr: 0.0001
+  weight_decay: 0.001
+  vq_weight: 0.1
+  checkpoint_interval: 50
+evaluation:
+  grid_size: 128
+  chunk_size: 20000
+  save_volumes: false
+runtime:
+  device: cuda
+  mixed_precision: true
+  num_workers: 1
+  seed: 20260721
+output_dir: runs/output/deepsparse/v10_luna16_noaug

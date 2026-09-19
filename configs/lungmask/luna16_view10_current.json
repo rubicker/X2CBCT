@@ -1,0 +1,53 @@
+{
+  "schema": "x2cbct_lungmask_experiment.v1",
+  "experiment_id": "luna16_view10_lungmask_r231_current",
+  "view_key": "view_10",
+  "target_shape_zyx": [128, 128, 128],
+  "primary_method": "CaSE-CBCT",
+  "case_policy": "strict",
+  "reference": {
+    "cache_manifest": "data_cache/difnet_v1_si10_rot10_3x3_256/luna16/test_noaug_256/luna16/cache_manifest.json",
+    "value_space": "normalized"
+  },
+  "lungmask": {
+    "modelname": "R231",
+    "batch_size": 20,
+    "force_cpu": false,
+    "volume_postprocessing": true,
+    "tqdm_disable": true
+  },
+  "methods": [
+    {
+      "name": "FDK",
+      "prediction_manifest": "runs/fdk/luna16_view10/prediction_manifest.json"
+    },
+    {
+      "name": "SART",
+      "prediction_manifest": "runs/sart/luna16_view10/prediction_manifest.json"
+    },
+    {
+      "name": "DIF-Net",
+      "prediction_manifest": "runs/output/dif_net_baseline/v10_luna16_noaug/validation/epoch_0200_full/test/prediction_manifest.json"
+    },
+    {
+      "name": "C2RV",
+      "prediction_manifest": "runs/output/duibi/c2rv_v10_luna16_noaug/validation/epoch_0200_full_final/test/prediction_manifest.json"
+    },
+    {
+      "name": "DuFal",
+      "prediction_manifest": "runs/output/dufal/v10_luna16_noaug/validation/epoch_0200_full_final/test/prediction_manifest.json"
+    },
+    {
+      "name": "DeepSparse",
+      "enabled": false,
+      "reason": "现有 v10 评估未启用 --save-volumes；需补存 generated_cbct 和 evaluation_manifest.json 后启用。",
+      "prediction_manifest": "runs/segmentation_lungmask/reconstruction_manifests/deepsparse_view10/evaluation_manifest.json"
+    },
+    {
+      "name": "CaSE-CBCT",
+      "enabled": false,
+      "reason": "现有 E2-SH-V10-luna3x3 仅保存 8 种扰动测试结果，没有与基线相同的 test_noaug_256 输出；需用最终 checkpoint 补跑同一 noaug 149 例后启用。",
+      "prediction_manifest": "runs/segmentation_lungmask/reconstruction_manifests/case_cbct_view10/prediction_manifest.json"
+    }
+  ]
+}

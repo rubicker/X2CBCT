@@ -1,0 +1,45 @@
+{
+  "schema": "x2cbct_reconstruction_metrics_config.v1",
+  "experiment_id": "luna16_view5_reconstruction_metrics_149",
+  "expected_cases": 149,
+  "primary_method": "CaSE-CBCT",
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 20260724,
+  "methods": [
+    {
+      "name": "FDK",
+      "metrics_csv": "runs/fdk/luna16_view5/metrics_per_case.csv"
+    },
+    {
+      "name": "SART",
+      "metrics_csv": "runs/sart/luna16_view5/metrics_per_case.csv"
+    },
+    {
+      "name": "DIF-Net",
+      "metrics_csv": "runs/output/dif_net_baseline/v5_luna16_noaug/validation/epoch_0200_full_final/test/metrics_per_case.csv"
+    },
+    {
+      "name": "C2RV",
+      "metrics_csv": "runs/output/duibi/c2rv_v5_luna16_noaug/validation/epoch_0200_full/test/metrics_per_case.csv"
+    },
+    {
+      "name": "DuFal",
+      "metrics_csv": "runs/output/dufal/v5_luna16_noaug/validation/epoch_0200_full_final/test/metrics_per_case.csv"
+    },
+    {
+      "name": "DeepSparse",
+      "metrics_csv": "runs/segmentation_lungmask/reconstruction_manifests/deepsparse_view5/metrics_per_case.csv"
+    },
+    {
+      "name": "CaSE-CBCT",
+      "metrics_csv": "runs/segmentation_lungmask/reconstruction_manifests/case_cbct_view5_si_p10_inverse/metrics_per_case.csv",
+      "case_id_column": "case_id",
+      "metric_columns": {
+        "mae_norm": "prediction_after_mae_norm",
+        "mae_hu": "prediction_after_mae_hu",
+        "psnr": "prediction_after_psnr",
+        "ssim": "prediction_after_ssim"
+      }
+    }
+  ]
+}
