@@ -1,6 +1,6 @@
-# CaSE-CBCT: Capsule Self-Attention based Extremely Sparse-View CBCT Reconstruction
+# CaSE-CBCT: Capsule Self-Attention-Based Extremely Sparse-View CBCT Reconstruction
 
-Official PyTorch implementation of **"CaSE-CBCT: Capsule Self-Attention based Extremely Sparse-View CBCT Reconstruction"** (IEEE Transactions on Medical Imaging, under review).
+Official PyTorch implementation of **"CaSE-CBCT: Capsule Self-Attention-Based Extremely Sparse-View CBCT Reconstruction"** (IEEE Transactions on Medical Imaging, under review).
 
 CaSE-CBCT reconstructs diagnostic-quality CBCT volumes from only **5 / 8 / 10 X-ray projections** with an implicit neural representation (INR) pipeline. Its two core components are:
 
@@ -68,7 +68,7 @@ If this code is useful to your research, please cite the paper above. The code i
 
 ```bibtex
 @article{dai2026casecbct,
-  title   = {CaSE-CBCT: Capsule Self-Attention based Extremely Sparse-View CBCT Reconstruction},
+  title   = {CaSE-CBCT: Capsule Self-Attention-Based Extremely Sparse-View CBCT Reconstruction},
   author  = {Dai, Yufan and Xie, Xin and Zhang, Jingjing and Yan, Hui and Li, Teng},
   journal = {IEEE Transactions on Medical Imaging},
   year    = {2026},
