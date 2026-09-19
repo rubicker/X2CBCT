@@ -61,7 +61,10 @@ pytest
 
 ## Citation
 
-If this code is useful to your research, please cite:
+If this code is useful to your research, please cite the paper above. The code itself is archived on Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22845130.svg)](https://doi.org/10.5281/zenodo.22845130)
+
 
 ```bibtex
 @article{dai2026casecbct,
