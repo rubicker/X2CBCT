@@ -1,0 +1,34 @@
+{
+  "title": "X2CBCT: Official implementation of CaSE-CBCT (Capsule Self-Attention-Based Extremely Sparse-View CBCT Reconstruction)",
+  "creators": [
+    {
+      "name": "Dai, Yufan",
+      "affiliation": "School of Artificial Intelligence, Anhui University"
+    },
+    {
+      "name": "Xie, Xin",
+      "affiliation": "Fujian Medical University Cancer Hospital"
+    },
+    {
+      "name": "Zhang, Jingjing",
+      "affiliation": "School of Artificial Intelligence, Anhui University"
+    },
+    {
+      "name": "Yan, Hui",
+      "affiliation": "Cancer Hospital, Chinese Academy of Medical Sciences"
+    },
+    {
+      "name": "Li, Teng",
+      "affiliation": "School of Artificial Intelligence, Anhui University"
+    }
+  ],
+  "description": "Official PyTorch implementation of CaSE-CBCT: capsule self-attention-based extremely sparse-view CBCT reconstruction from 5/8/10 projections. Includes dual-layer competitive capsule routing (DL-CCR), pose-synchronized DRR-free data augmentation, downstream lung segmentation experiments, and the LUNA16 split registries. Full reproduction guide in docs/REPRODUCIBILITY.md.",
+  "keywords": [
+    "CBCT reconstruction",
+    "sparse view",
+    "implicit neural representation",
+    "capsule network",
+    "data augmentation",
+    "image-guided radiotherapy"
+  ]
+}
